@@ -16,7 +16,8 @@ class CashRegister
   
   def apply_discount
     discount = (@total * (@discount.to_f * 0.01)).to_i
-    @total -= discount 
+    @total -= discount
+    puts ""
   end
   
 end
