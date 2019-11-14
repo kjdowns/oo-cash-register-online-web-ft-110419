@@ -1,3 +1,4 @@
+require 'pry'
 
 class CashRegister
   
@@ -15,6 +16,7 @@ class CashRegister
   
   def apply_discount
     discount = @total *= (@discount.to_f * 0.01)
+    binding.pry
     @total -= discount 
   end
   
